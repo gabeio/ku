@@ -18,20 +18,11 @@
  - monitors introduced routines to gather accounting info about system usage
  - 
 
-2. 
+2. Executives (50's-60's)
+ - increased throughput was the primary thrust
+ - intro of the concept of the "interrupt" to eliminate the condition of having the cpu remain idle waiting for io
+ - allowed the concept of multiprogramming (multitasking) which allows more than 1 active job/task in the system at any point in time each is some partial state of execution 
+> os need to create protection system to keep jobs from messing with each other and the os memory
 
-3. 
-
-4. 
-
-5. 
-
-6. 
-
-7. 
-
-8. 
-
-9. 
-
-10. 
+3. Supervisors (mid 60's, early 70's)
+ - IBM's 360 family (machines)
