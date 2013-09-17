@@ -25,3 +25,10 @@ data can be analog or digital
 
 - peak amplitude: absolute value of high intensity
 
+- period, T: how many seconds it takes a signal to complete a cycle
+- freq, f: number of periods per second
+
+6 periods in 1s is 6hz (hz=periods/s)
+
+f=1/T; T=1/f
+
