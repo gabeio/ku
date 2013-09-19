@@ -30,11 +30,24 @@ processor utilization = time processor is running(divided by)total time
 turnaround time = difference in time from when a job is submitted until it is completed (finish time - arrival time)
 average turnaround time (T) = summation of T to n divided by n
 
-Job # | arrival time | start time | finish time | turnaround time
-  1   ||||
-  2   |
-
 Multiprogramming Systems - many jobs may be in the system in partial states of exe. Multiprogramming compenstates for discrepancies in speed between the cpu and i/o devices.
+
 Automous i/o devs operate independently while the cpu continues to execute. Processor utilization is high
+
 Interrupt signals are set by peripheral devs in a central register connected to the cpu. when an interrupt occurs, the cpu can suspend its current task and service the interrupt.
-Multip
+
+Multiprogramming requires efficient memory management techniques to allow many jobs to be available for processing
+
+In order to simulte concurrent execution of many jobs/tasks, each task is serviced for a short period of time, then a timing interrupt occurs and the processor services another task.
+
+## The idea behind multiprogramming/tasking is the following
+- each process keeps on alternating between the cpu and input output devs until it terminates
+- when a process goes for(requests) i/o, instead of having the processor remain idle the OS will switch to another job assuming there is one available and execute it
+
+process control block (pcb) - contains information associated with a process (it is a datastructure)
+- process state/pointer/pc(program counter)/registers/priority/memory management info
+
+processes which are ready and waiting to execute are kept in a list called the ready queue
+a queue header will contain pointers to the first and last pcbs in the list.
+each pcb has a pointer field that points to the next pcb in the list.
+
