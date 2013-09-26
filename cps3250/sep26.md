@@ -63,8 +63,25 @@ can be preemptive or nonpreemptive
 problem: starvation a low priority job many never get to exe
 solution: aging - gradually increase the priority of a job (exe: increase the priority by 1 for every 15 mins a job waits)
 
+4. Round Robin (RR)
+each process is given a short amount of cpu time and then it is placed back in the ready queue
+- preemptive
 
+choice of time slicing (time quantum)
+too large - reduces the algorithm to FCFS
+too small - makes task switching time noticable with little time spent on exe
 
+5. multilevel queues
+- more than one ready queue and jobs are permanently assigned to one queue
+- for situations where jobs can be classified into different groups
+- queues can have priority over other queues
+- each queue may use it's own scheduling algorithm
+
+6. multilevel feedback queues
+- same as multilevel queues except now jobs can move between queues
+- arriving processes enter the system at q1
+- after a process receives a time quantum it drops to the next higher numbered queue
+- cpu always services the lowest numbered non-empty queue.
 
 
 
