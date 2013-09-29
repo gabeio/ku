@@ -83,13 +83,13 @@ too small - makes task switching time noticable with little time spent on exe
 - after a process receives a time quantum it drops to the next higher numbered queue
 - cpu always services the lowest numbered non-empty queue.
 
-
-
-
-
-
-
-
-
+## Memory Management Techniques:
+1. single contiguous allocation
+2. partitioning
+3. relocating partitions
+4. paging
+5. demand paging
+6. segmentation
+7. demand paging/segmentation
 
 
