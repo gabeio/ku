@@ -46,6 +46,25 @@ not can only do registers
 
 s-ext: sign extend (makes 11110 into 1111111111111110)
 
+OR:
+!A
+    >(AND) !Result
+!B
+
+COPY:
+ADD,r2,r1,0
+
+CLEAR:
+AND,r1,r1,0
+
+register to mem = store
+mem to register = load
+
+copy mem to mem:
+load & store
+
+
+
 ****************************************************************************************
 
 __D__ & __S__ are register locations.
@@ -62,7 +81,7 @@ Immediate:
 
 0101 __D__ __S1__ _1_ __Imm5__ (AND)
 
-
+0010 __D__ __OFFSET__ (load)
 
 
 ****************************************************************************************
