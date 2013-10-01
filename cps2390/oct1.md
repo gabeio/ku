@@ -81,14 +81,19 @@ Immediate:
 
 0101 __D__ __S1__ _1_ __Imm5__ (AND)
 
-0010 __D__ __OFFSET__ (load)
+0010 __D__ __OFFSET9__ (load)
 
-0011 __S__ __OFFSET__ (store)
+0011 __S__ __OFFSET9__ (store)
 
-1010 __D__ __OFFSET__ (load indirect)
+1010 __D__ __OFFSET9__ (load indirect)
 
-1011 __S__ __OFFSET__ (store indirect)
+1011 __S__ __OFFSET9__ (store indirect)
 
+0110 __D__ __B__ __OFFSET6__ (load from register)
+
+0111 __S__ __B__ __OFFSET6__ (store from register)
+
+1110 __D__ __OFFSET9__ ()
 
 ****************************************************************************************
 
