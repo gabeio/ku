@@ -43,3 +43,24 @@ source and destination operands are registers
 these instructions DO NOT regerence memory
 add & and can use immediate mode.
 not can only do registers
+
+****************************************************************************************
+
+__D__ & __S__ are register locations.
+
+1001 __D__ __S__ 111111 (NOT)
+
+Registers:
+0001 __D__ __S1__ _0_ 00 __S2__ (ADD)    _0_ is 0 for register addition will change later for memory location
+
+0101 __D__ __S1__ _0_ 00 __S2__ (AND)
+
+Immediate:
+0001 __D__ __S1__ _1_ __Imm5__ (ADD)   _1_ is 1 for using immediate data
+
+0101 __D__ __S1__ _1_ __Imm5__ (AND)
+
+
+
+
+****************************************************************************************
