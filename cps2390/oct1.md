@@ -44,6 +44,8 @@ these instructions DO NOT regerence memory
 add & and can use immediate mode.
 not can only do registers
 
+s-ext: sign extend (makes 11110 into 1111111111111110)
+
 ****************************************************************************************
 
 __D__ & __S__ are register locations.
