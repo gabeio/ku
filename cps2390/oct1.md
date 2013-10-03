@@ -97,6 +97,11 @@ Immediate:
 
 0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
 
+1111 0000 _vector8_ (TRAP)
+vectors:
+x23 input a character from the keyboard
+x21 output a character to the monitor
+x25 halt the program
 
 
 ****************************************************************************************
