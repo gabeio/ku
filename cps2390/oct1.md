@@ -103,6 +103,8 @@ x23 input a character from the keyboard
 x21 output a character to the monitor
 x25 halt the program
 
+MASK:
+AND R1, R0, xFF
 
 ****************************************************************************************
 
