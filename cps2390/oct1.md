@@ -81,19 +81,19 @@ Immediate:
 
 0101 __D__ __S1__ _1_ __Imm5__ (AND)
 
-0010 __D__ __OFFSET9__ (LD load)
+0010 __D__ __OFFSET9__ (LD) load
 
-0011 __S__ __OFFSET9__ (ST store)
+0011 __S__ __OFFSET9__ (ST) store
 
-1010 __D__ __OFFSET9__ (LDI load indirect)
+1010 __D__ __OFFSET9__ (LDI) load indirect
 
-1011 __S__ __OFFSET9__ (STI store indirect)
+1011 __S__ __OFFSET9__ (STI) store indirect
 
-0110 __D__ __B__ __OFFSET6__ (LDR load from register)
+0110 __D__ __B__ __OFFSET6__ (LDR) load from register
 
-0111 __S__ __B__ __OFFSET6__ (STR store from register)
+0111 __S__ __B__ __OFFSET6__ (STR) store from register
 
-1110 __D3__ __OFFSET9__ (LEA)
+1110 __D3__ __OFFSET9__ (LEA) load immediately
 
 0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
 
