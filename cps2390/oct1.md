@@ -93,7 +93,7 @@ Immediate:
 
 0111 __S__ __B__ __OFFSET6__ (STR store from register)
 
-1110 __D3__ __OFFSET9__ (?)
+1110 __D3__ __OFFSET9__ (LEA)
 
 0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
 
