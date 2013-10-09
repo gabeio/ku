@@ -95,7 +95,7 @@ Immediate:
 
 1110 __D3__ __OFFSET9__ (LEA) load immediately
 
-1100 
+1100 (JMP)
 
 0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
 
