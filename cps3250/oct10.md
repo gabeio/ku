@@ -35,3 +35,8 @@ include a protection field in the PMT (access control)
 ### disadvantages of paging
 - internal frag
 - mapping hardware slows down the speed of the system
+- mem lost to storing the tables (pmt, mbt) and the cpu time is spent maintaining the tables
+- job's size is limited to size of available memory
+- memory may contain information that is never used
+
+**next week is the midterm**
