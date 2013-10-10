@@ -40,3 +40,13 @@ include a protection field in the PMT (access control)
 - memory may contain information that is never used
 
 **next week is the midterm**
+no history of os
+some openended
+cpu utilization
+turn around time
+
+
+
+
+
+
