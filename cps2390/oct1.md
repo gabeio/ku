@@ -81,7 +81,7 @@ Immediate:
 
 0101 __D__ __S1__ _1_ __Imm5__ (AND)
 
-0010 __D__ __OFFSET9__ (LD) load
+0010 __D3__ __OFFSET9__ (LD) load
 
 0011 __S__ __OFFSET9__ (ST) store
 
@@ -95,7 +95,7 @@ Immediate:
 
 1110 __D3__ __OFFSET9__ (LEA) load immediately
 
-1100 (JMP)
+1100 000 _B3_ 000000 (JMP)
 
 0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
 
