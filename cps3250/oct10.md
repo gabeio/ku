@@ -23,3 +23,15 @@ small page size = more memory usage via pmt
 
 Sharing Code (compilers, text editors, assemblers, ...)
 in order for code to be shareable it must be reentrant (pure) - that is it never alters itself.
+
+### protection
+include a protection field in the PMT (access control)
+
+### paging advantages
+- eliminates external frag
+- mem assigned does not have to be contiguous
+- makes it possible to share code
+
+### disadvantages of paging
+- internal frag
+- mapping hardware slows down the speed of the system
