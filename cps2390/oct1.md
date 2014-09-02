@@ -46,6 +46,25 @@ not can only do registers
 
 s-ext: sign extend (makes 11110 into 1111111111111110)
 
+OR:
+!A
+    >(AND) !Result
+!B
+
+COPY:
+ADD,r2,r1,0
+
+CLEAR:
+AND,r1,r1,0
+
+register to mem = store
+mem to register = load
+
+copy mem to mem:
+load & store
+
+
+
 ****************************************************************************************
 
 __D__ & __S__ are register locations.
@@ -62,7 +81,36 @@ Immediate:
 
 0101 __D__ __S1__ _1_ __Imm5__ (AND)
 
+0010 __D3__ __OFFSET9__ (LD) load
 
+0011 __S__ __OFFSET9__ (ST) store
 
+1010 __D__ __OFFSET9__ (LDI) load indirect
+
+1011 __S__ __OFFSET9__ (STI) store indirect
+
+0110 __D__ __B__ __OFFSET6__ (LDR) load from register
+
+0111 __S__ __B__ __OFFSET6__ (STR) store from register
+
+1110 __D3__ __OFFSET9__ (LEA) load immediately
+
+1100 000 _B3_ 000000 (JMP)
+
+0000 _N1_ _Z1_ _P1_ _OFFSET9_(BR nzp)
+
+1111 0000 _vector8_ (TRAP)
+vectors:
+x23 input a character from the keyboard
+x21 output a character to the monitor
+x25 halt the program
 
 ****************************************************************************************
+
+MASK:
+AND R1, R0, xFF
+
+SHIFT LEFT:
+ADD R1, R1, R1 *4
+
+
